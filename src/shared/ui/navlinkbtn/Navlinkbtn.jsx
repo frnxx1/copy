@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import styles from './navlinkbtn.module.css';
+import {NavLink} from 'react-router-dom'
 
-function Navlinkbtn() {
+function Navlinkbtn({text, icon, to}) {
   return (
-    <div>Navlinkbtn</div>
+    <button className={styles.navlinkbtn}>
+        
+            <img src={icon} alt={icon} className={styles.navicon} />
+            <NavLink className={styles.navLink} to={to}>{text}</NavLink>
+        
+    </button>
   )
 }
 

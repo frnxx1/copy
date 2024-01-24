@@ -1,0 +1,34 @@
+.navlinkbtn {
+    display: flex;
+    align-items: center;
+    background-color: #ffffffbb;
+    border: none;
+    /* position: relative; */
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 210px;
+    height: 45px;
+    margin-top: 1px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.navicon {
+    margin-left: -30px;
+    width: 30px;
+}
+
+.navlinkbtn:hover {
+    background-color: #ccccccb9;
+}

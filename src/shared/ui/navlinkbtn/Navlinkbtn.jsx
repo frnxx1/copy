@@ -4,12 +4,10 @@ import {NavLink} from 'react-router-dom'
 
 function Navlinkbtn({text, icon, to}) {
   return (
-    <button className={styles.navlinkbtn}>
-        
+    <NavLink to={to} className={styles.navlinkbtn}>
             <img src={icon} alt={icon} className={styles.navicon} />
             <NavLink className={styles.navLink} to={to}>{text}</NavLink>
-        
-    </button>
+    </NavLink>
   )
 }
 

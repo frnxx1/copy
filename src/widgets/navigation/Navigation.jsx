@@ -1,4 +1,5 @@
 import React from 'react'
+import Categorybtn from '../../shared/ui/categorybtn/Categorybtn';
 import styles from './Navigation.module.css';
 
 
@@ -17,7 +18,7 @@ function Navigation() {
             </div>
 
             <div className={styles.kategory}>
-                
+                <Categorybtn text="Все" to="/"/>
             </div>
 
         </div>

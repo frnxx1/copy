@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styles from './categorybtn.module.css';
 
-function Categorybtn() {
+
+function Categorybtn({ text, to }) {
   return (
-    <div>Categorybtn</div>
+    <NavLink to={to} className={styles.categorybtn}>
+        {text}
+    </NavLink>
   )
 }
 

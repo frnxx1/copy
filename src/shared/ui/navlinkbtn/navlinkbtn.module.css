@@ -1,7 +1,7 @@
 .navlinkbtn {
     display: flex;
     align-items: center;
-    background-color: #ffffffbb;
+    background-color: #ffffff8a;
     border: none;
     /* position: relative; */
     padding-left: 40px;
@@ -11,9 +11,10 @@
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
-    width: 210px;
-    height: 45px;
+    width: 150px;
+    height: 35px;
     margin-top: 1px;
+    text-decoration: none;
 }
 
 .navLink {
@@ -32,3 +33,4 @@
 .navlinkbtn:hover {
     background-color: #ccccccb9;
 }
+

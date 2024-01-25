@@ -1,0 +1,25 @@
+.categorybtn {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #cccccc8a;
+    cursor: pointer;
+    transition: 0.2s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+.categorybtn:hover {
+    background-color: #ccc;
+}
+
+.active {
+    background-color: black;
+}

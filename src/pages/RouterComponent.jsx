@@ -1,12 +1,16 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import SideBar from '../widgets/sidebar/SideBar'
+import Layout from './Layout/Layout';
+import './style.css';
 function RouterComponent() {
   return (
     <>
-        <Routes>
-            <Route path='/' element={<SideBar/>}/>
-        </Routes>
+        <Layout>
+          <Routes>
+             {/* <Route path='/navi' element={<Navigation/>}/> */}
+          </Routes>
+        </Layout>
+
     </>
   )
 }

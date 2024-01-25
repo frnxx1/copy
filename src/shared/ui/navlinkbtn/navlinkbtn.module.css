@@ -17,9 +17,9 @@
     text-decoration: none;
 }
 
-.navLink {
-    text-decoration: none;
-    color: black;
+.NavLink {
+    /* text-decoration: none; */
+    color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 600;
     margin-left: 20px;

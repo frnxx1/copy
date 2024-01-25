@@ -2,6 +2,7 @@ import React from 'react'
 import Categorybtn from '../../shared/ui/categorybtn/Categorybtn';
 import styles from './Navigation.module.css';
 import youtubeicon from '../assets/iconyoutube.png';
+import Input from '../../shared/ui/input/Input';
 
 
 function Navigation() {
@@ -16,7 +17,7 @@ function Navigation() {
             </div>
 
             <div className={styles.searhContainer}>
-                
+                <Input placeholder="Введите запрос"/>
             </div>
 
             <div className={styles.kategory}>

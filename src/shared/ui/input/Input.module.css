@@ -1,0 +1,21 @@
+.inputcontainer {
+    position: relative;
+}
+
+.searh {
+    padding: 10px;
+    border-radius: 20px;
+    width: 370px;
+    padding-right: 40px;
+    border: 1.5px solid #ccc;
+}
+
+.searh:focus {
+    outline: none;
+}
+
+.searhicon {
+    position: absolute;
+    top: 4px;
+    left: 385px;
+}

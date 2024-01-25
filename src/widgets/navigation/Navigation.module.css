@@ -17,8 +17,7 @@
 
 .navigateContainer {
     display: flex;
-    justify-content: space-around;
-    max-width: 1300px;
+    justify-content: space-between;
     padding: 10px;
     align-items: center;
 }

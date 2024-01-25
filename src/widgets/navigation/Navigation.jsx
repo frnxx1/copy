@@ -23,7 +23,9 @@ function Navigation() {
             <div className={styles.kategory}>
                 <Categorybtn text="Все" to="/"/>
                 <Categorybtn text="Музыка" to="/muzik"/>
-                <Categorybtn text="Рэп" to="/rep"/>
+                <Categorybtn text="Кино" to="/kino"/>
+                <Categorybtn text="еще..." to="/category"/>
+                {/* <Categorybtn text="Экшен и приключения" to="/akshen"/> */}
             </div>
 
         </div>

@@ -1,11 +1,11 @@
 import React from 'react';
 import Navigation from '../../widgets/navigation/Navigation';
 import SideBar from '../../widgets/sidebar/SideBar';
-import styles from './Layout.module.css';
+import  '../style.css';
 
 function Layout({children}) {
   return (
-    <div className={styles.layout}>
+    <div className="layout">
         <Navigation/>
         {children}
         <SideBar/>

@@ -1,0 +1,25 @@
+.navigateLogo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logotext {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 40px;
+}
+
+
+.navigateContainer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    padding: 10px;
+    align-items: center;
+}
+

@@ -7,10 +7,13 @@ function Layout({children}) {
   return (
     <div className={styles.layout}>
         <Navigation/>
-        {children}
-        <SideBar/>
+       <div className={styles.layoutcontainer}>
+          <SideBar/>
+          {children}
+       </div>
+        
     </div>
   )
 }
 
-export default Layout
+export default Layout;

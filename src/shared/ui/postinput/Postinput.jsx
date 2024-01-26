@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import styles from './postinput.module.css';
 
-function Postinput() {
+
+function Postinput({type, placeholder, name}) {
   return (
-    <div>Postinput</div>
+    <input type={type} placeholder={placeholder} name={name} className={styles.postinput}/>
   )
 }
 
-export default Postinput
+export default Postinput;

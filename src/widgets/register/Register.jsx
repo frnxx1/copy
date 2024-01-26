@@ -1,6 +1,11 @@
 import React, {useEffect, useState} from 'react';
+import Jwtbtn from '../../shared/ui/jwtbtn/Jwtbtn';
 import Postinput from '../../shared/ui/postinput/Postinput';
+import Submitbtn from '../../shared/ui/submitbtn/Submitbtn';
 import styles from './register.module.css';
+import registerphoto from '../assets/registerphoto.webp';
+import { NavLink } from 'react-router-dom';
+
 
 function Register() {
 
@@ -58,7 +63,7 @@ function Register() {
           }
     
         }else if(e.target.name === 'password') {
-          if(e.target.value.length < 6 ||e.target.value.length > 8 ) {
+          if(e.target.value.length < 6 || e.target.value.length > 8 ) {
             setPasswordError('Пароль должен быть больше 6 символов');
       
             if(!e.target.value) {
@@ -76,17 +81,16 @@ function Register() {
     <form className={styles.register}>
         <div className={styles.registercontainer}>
         <div className={styles.loginBlock}>
-              <h2 className="logintitle">Авторизация пользователя</h2>
+              <h2 className="logintitle">Регистрация пользователя</h2>
               <Jwtbtn text="Войти с помощью google"/>
-              <Postinput name="name" value={userValue.name} placeholder="Введите свой name"/>
               <Postinput onChange={e => dataHandlerChange(e)} emailDirty={emailDirty} emailError={emailError} Blur={e => blurHandler(e)} value={userValue.email} placeholder="Введите email" name="email" type="email"/>
               <Postinput emailDirty={passwordDirty} emailError={passwordError} onChange={e => dataHandlerChange(e)} value={userValue.password} Blur={e => blurHandler(e)} placeholder="Введите password" name="password" type="password"/>
               <Submitbtn text="отправить"/>
 
-              <NavLink className={styles.text} to="/register">Если у вас пока нету аккаунта, то можете создать новый аккаунт</NavLink>
+              <NavLink className={styles.text} to="/register">Если у вас есть аккаунт, то можете войти</NavLink>
             </div>
 
-            <img src={loginphoto} alt={loginphoto} className={styles.loginphoto}/>
+            <img src={registerphoto} alt={registerphoto} className={styles.loginphoto}/>
         </div>
     </form>
   )

@@ -9,3 +9,8 @@
 .postinput:focus {
     outline: none;
 }
+
+
+.emailError {
+    color: red;
+}

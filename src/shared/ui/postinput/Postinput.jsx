@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './postinput.module.css';
 
+  function Postinput({type, placeholder, name, onChange, value, Blur, emailDirty, emailError}) {
 
-function Postinput({type, placeholder, name}) {
+
   return (
-    <input type={type} placeholder={placeholder} name={name} className={styles.postinput}/>
+    <>
+      <input value={value} onChange={onChange} type={type} onBlur={Blur} placeholder={placeholder} name={name} className={styles.postinput}/>
+      {(emailDirty && emailError) && <span className={styles.emailError}>{emailError}</span>}
+    </>
   )
 }
 

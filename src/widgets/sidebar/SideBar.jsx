@@ -6,6 +6,8 @@ import likeicon from '../assets/like2.png';
 import mykanal from '../assets/mykanal.png';
 import chasy from '../assets/icomchasy.svg';
 import myvideoicon from '../assets/iconmyvideo.png';
+import loginicon from '../assets/login.png';
+
 
 function SideBar() {
   return (
@@ -19,6 +21,7 @@ function SideBar() {
             <Navlinkbtn text="Мой канал" icon={mykanal} to='/mykanal' />
             <Navlinkbtn text="Смотреть позже" icon={chasy} to='/then' />
             <Navlinkbtn text="Ваши видео" icon={myvideoicon} to='/myvideo' />
+            <Navlinkbtn text="Войти" icon={loginicon} to='/login' />
         </div>
 
     </div>

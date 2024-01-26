@@ -25,7 +25,6 @@ function Navigation() {
                 <Categorybtn text="Музыка" to="/muzik"/>
                 <Categorybtn text="Кино" to="/kino"/>
                 <Categorybtn text="еще..." to="/category"/>
-                {/* <Categorybtn text="Экшен и приключения" to="/akshen"/> */}
             </div>
 
         </div>

@@ -1,7 +1,31 @@
-.login {
+.loginBlock {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+}
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 145px;
+}
+
+.loginphoto {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.text {
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.text:hover {
+    text-decoration: none;
 }

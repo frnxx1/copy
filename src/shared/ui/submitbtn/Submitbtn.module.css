@@ -1,0 +1,16 @@
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}

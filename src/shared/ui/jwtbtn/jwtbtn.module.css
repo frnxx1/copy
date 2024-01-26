@@ -1,0 +1,28 @@
+.jwtbtn {
+    background-color: rgba(0, 0, 255, 0.881);
+    border-radius: 17px;
+    border: none;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.jwtbtn:hover {
+    transform: scale(1.01);
+}
+
+.jwtbtntext {
+    color: #fff;
+}
+
+.jwtbtnicon {
+    width: 30px;
+    margin-left: 67px;
+}
+

@@ -1,8 +1,10 @@
 import React from 'react';
+import styles from './Submitbtn.module.css';
 
-function Submitbtn() {
+
+function Submitbtn({text}) {
   return (
-    <div>Submitbtn</div>
+    <button className={styles.btn}>{text}</button>
   )
 }
 

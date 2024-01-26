@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './postinput.module.css';
 
-  function Postinput({type, placeholder, name, onChange, value, Blur, emailDirty, emailError}) {
-
+function Postinput({type, placeholder, name, onChange, value, Blur, emailDirty, emailError}) {
 
   return (
     <>

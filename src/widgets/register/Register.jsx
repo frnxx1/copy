@@ -80,17 +80,18 @@ function Register() {
   return (
     <form className={styles.register}>
         <div className={styles.registercontainer}>
-        <div className={styles.loginBlock}>
-              <h2 className="logintitle">Регистрация пользователя</h2>
+        <div className={styles.registerBlock}>
+              <h2 className="registertitle">Регистрация пользователя</h2>
               <Jwtbtn text="Войти с помощью google"/>
+              <input type="text" value={userValue.name} name="name" className={styles.nameinput} placeholder="Введите name"/>
               <Postinput onChange={e => dataHandlerChange(e)} emailDirty={emailDirty} emailError={emailError} Blur={e => blurHandler(e)} value={userValue.email} placeholder="Введите email" name="email" type="email"/>
               <Postinput emailDirty={passwordDirty} emailError={passwordError} onChange={e => dataHandlerChange(e)} value={userValue.password} Blur={e => blurHandler(e)} placeholder="Введите password" name="password" type="password"/>
               <Submitbtn text="отправить"/>
 
-              <NavLink className={styles.text} to="/register">Если у вас есть аккаунт, то можете войти</NavLink>
+              <NavLink className={styles.text} to="/login">Если у вас есть аккаунт, то можете войти</NavLink>
             </div>
 
-            <img src={registerphoto} alt={registerphoto} className={styles.loginphoto}/>
+            <img src={registerphoto} alt={registerphoto} className={styles.registerphoto}/>
         </div>
     </form>
   )

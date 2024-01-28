@@ -1,0 +1,44 @@
+.registerBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 30px; */
+}
+
+.registercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 145px;
+}
+
+.registerphoto {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.text {
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.text:hover {
+    text-decoration: none;
+}
+
+.nameinput {
+    width: 250px;
+    padding: 8px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border: 1.5px solid #ccc;
+}
+
+
+.nameinput:focus {
+    outline: none;
+}

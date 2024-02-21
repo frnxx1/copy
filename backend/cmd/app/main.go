@@ -40,7 +40,7 @@ func handlerFunc() *gin.Engine {
 			"data":    vid,
 		})
 	})
-	// Create a new group for the API
+	
 	api := r.Group("/api")
 	{
 		// Create a new group for the public routes

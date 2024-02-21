@@ -23,7 +23,7 @@ type User struct {
 	gorm.Model
 	Video
 	ID       int    `gorm:"primaryKey"`
-	Name     string 
+	Name     string  
 	Email    string `json:"email" binding:"required" gorm:"unique"`
 	Password string `json:"password" binding:"required"`
 }
@@ -31,7 +31,7 @@ type User struct {
 /*  Глобальная переменная для работы с базой данных */
 var GlobalDB *gorm.DB
 
-/* Функция для подключения базы данных */
+/* Функция для подключения базы данных  */
 func InitDatabase() (err error) {
 	localhost := "localhost"
 	db := "db"

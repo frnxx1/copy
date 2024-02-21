@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 
-/* Cтруктура юзера для базы данных */
+/* Cтруктура юзера для базы данных  */
 
 type User struct {
 	gorm.Model

@@ -47,17 +47,17 @@ func Signup(c *gin.Context)error {
 	if err != nil {
 		log.Println(err)
 		c.JSON(500, gin.H{
-			"Error": "Error Creating User",
+			"Error": "Error Creating User ",
 		})
 		c.Abort()
-		return err 
+		return err  
 	}
 	c.JSON(200, gin.H{
 		"Message": "Sucessfully Register",
 	})
 	return nil
 }
-/* вход */
+/* вход  */
 func Login(c *gin.Context) {
 	var payload LoginPayload
 	var user models.User

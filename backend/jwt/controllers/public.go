@@ -23,7 +23,7 @@ type LoginResponse struct {
 }
 
 /* регистрация */
-func Signup(c *gin.Context) {
+func Signup(c *gin.Context)error {
 	var user models.User
 	err := c.ShouldBindJSON(&user)
 	if err != nil {
@@ -32,7 +32,7 @@ func Signup(c *gin.Context) {
 			"Error": "Invalid Inputs ",
 		})
 		c.Abort()
-		return
+		return err
 	}
 	err = user.HashPassword(user.Password)
 	if err != nil {
@@ -41,7 +41,7 @@ func Signup(c *gin.Context) {
 			"Error": "Error Hashing Password",
 		})
 		c.Abort()
-		return
+		return err
 	}
 	err = user.CreateUserRecord()
 	if err != nil {
@@ -50,11 +50,12 @@ func Signup(c *gin.Context) {
 			"Error": "Error Creating User",
 		})
 		c.Abort()
-		return
+		return err 
 	}
 	c.JSON(200, gin.H{
 		"Message": "Sucessfully Register",
 	})
+	return nil
 }
 /* вход */
 func Login(c *gin.Context) {

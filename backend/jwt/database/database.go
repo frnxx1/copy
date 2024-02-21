@@ -23,6 +23,7 @@ type User struct {
 	gorm.Model
 	Video
 	ID       int    `gorm:"primaryKey"`
+	Name     string 
 	Email    string `json:"email" binding:"required" gorm:"unique"`
 	Password string `json:"password" binding:"required"`
 }

@@ -49,7 +49,14 @@ func handlerFunc() *gin.Engine {
 			// Add the login route
 			public.POST("/login", controllers.Login)
 			// Add the signup route
-			public.POST("/signup", controllers.Signup)
+			public.POST("/signup", func(ctx *gin.Context) {
+				err := controllers.Signup(ctx)
+				if err != nil {
+					ctx.JSON(200, gin.H{
+						"Message": "Sucessfully Register",
+					})
+				}
+			})
 		}
 		// Add the signup route
 		protected := api.Group("/protected").Use(middleware.AuthZ())
@@ -67,7 +74,7 @@ func main() {
 		log.Fatal(err)
 	}
 	router := handlerFunc()
-	router.Run("localhost:8080")
+	router.Run("localhost:3001")
 }
 
 func CrVd(ctx *gin.Context){
@@ -95,3 +102,5 @@ func CrVd(ctx *gin.Context){
 			"data":    vid,
 		})
 }
+
+

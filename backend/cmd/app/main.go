@@ -43,7 +43,7 @@ func handlerFunc() *gin.Engine {
 	
 	api := r.Group("/api")
 	{
-		// Create a new group for the public routes
+		// Create a new group for the public routes 
 		public := api.Group("/public")
 		{
 			// Add the login route

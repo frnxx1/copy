@@ -52,7 +52,7 @@ func handlerFunc() *gin.Engine {
 			public.POST("/signup", func(ctx *gin.Context) {
 				err := controllers.Signup(ctx)
 				if err != nil {
-					ctx.JSON(200, gin.H{
+					ctx.JSON(404, gin.H{
 						"Message": "Sucessfully Register",
 					})
 				}

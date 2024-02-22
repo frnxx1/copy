@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice, isRejectedWithValue} from '@reduxjs/toolkit';
-import axios from '../../api/axios.js';
+import axios from '../../api/axios';
 
 export const createNewUser = createAsyncThunk(
     'createUser/post',

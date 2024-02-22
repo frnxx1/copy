@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import RouterComponent from './pages/RouterComponent';
-// new dev
+// new dev create hooks
 function App() {
   return (
     <>

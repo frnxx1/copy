@@ -92,7 +92,7 @@ function Register() {
         <div className={styles.registerBlock}>
               <h2 className="registertitle">Регистрация пользователя</h2>
               <Jwtbtn text="Войти с помощью google"/>
-              <input type="text" value={userValue.name} name="name" className={styles.nameinput} placeholder="Введите name"/>
+              <input type="text" onChange={e => dataHandlerChange(e)} value={userValue.name} name="name" className={styles.nameinput} placeholder="Введите name"/>
               <Postinput onChange={e => dataHandlerChange(e)} emailDirty={emailDirty} emailError={emailError} Blur={e => blurHandler(e)} value={userValue.email} placeholder="Введите email" name="email" type="email"/>
               <Postinput emailDirty={passwordDirty} emailError={passwordError} onChange={e => dataHandlerChange(e)} value={userValue.password} Blur={e => blurHandler(e)} placeholder="Введите password" name="password" type="password"/>
               <Submitbtn text="отправить"/>

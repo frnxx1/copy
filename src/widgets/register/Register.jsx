@@ -4,8 +4,9 @@ import Postinput from '../../shared/ui/postinput/Postinput';
 import Submitbtn from '../../shared/ui/submitbtn/Submitbtn';
 import styles from './register.module.css';
 import registerphoto from '../assets/registerphoto.webp';
-import { NavLink } from 'react-router-dom';
-
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux'
+import { createNewUser } from '../../hooks/reducers/register.reducer';
 
 function Register() {
 
@@ -42,6 +43,15 @@ function Register() {
             break;
           }
       }
+
+      const navigate = useNavigate();
+      const dispatch = useDispatch();
+
+      const userSubmit = e => {
+        navigate('/login');
+        dispatch(createNewUser(userValue));
+
+      }
     
       const dataHandlerChange = e => {
         
@@ -76,9 +86,8 @@ function Register() {
       }
 
       
-
   return (
-    <form className={styles.register}>
+    <form onSubmit={userSubmit} className={styles.register}>
         <div className={styles.registercontainer}>
         <div className={styles.registerBlock}>
               <h2 className="registertitle">Регистрация пользователя</h2>
